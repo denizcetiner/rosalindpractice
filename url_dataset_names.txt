@@ -2,3 +2,5 @@ INI_url http://rosalind.info/problems/ini/
 INI_id ini
 DNA_url http://rosalind.info/problems/dna/
 DNA_id dna
+RNA_url http://rosalind.info/problems/rna/
+RNA_id rna
