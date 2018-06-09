@@ -4,3 +4,5 @@ DNA_url http://rosalind.info/problems/dna/
 DNA_id dna
 RNA_url http://rosalind.info/problems/rna/
 RNA_id rna
+REVC_url http://rosalind.info/problems/revc/
+REVC_id revc

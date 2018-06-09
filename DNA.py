@@ -1,4 +1,4 @@
-def run(dna_sequence=""):
+def run(dna_sequence="AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"):
     nucleotide_counts = {"A": 0, "G": 0, "T": 0, "C": 0}
     for nucleotide in dna_sequence:
         if nucleotide in nucleotide_counts:
