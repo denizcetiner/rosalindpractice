@@ -6,3 +6,5 @@ RNA_url http://rosalind.info/problems/rna/
 RNA_id rna
 REVC_url http://rosalind.info/problems/revc/
 REVC_id revc
+FIB_url http://rosalind.info/problems/fib/
+FIB_id fib

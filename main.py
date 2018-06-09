@@ -8,7 +8,7 @@ def run(problem_name = ""):
     module = __import__(problem_name)
     result = getattr(module, "run")(dataset_input)
     with open("output/{0}_result.txt".format(dataset_filename), "w") as dataset_result_file:
-        dataset_result_file.write(result)
+        dataset_result_file.write(str(result))
     return
 
 values = {}
