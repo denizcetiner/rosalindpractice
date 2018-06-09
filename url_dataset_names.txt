@@ -1,0 +1,4 @@
+INI_url http://rosalind.info/problems/ini/
+INI_id ini
+DNA_url http://rosalind.info/problems/dna/
+DNA_id dna
