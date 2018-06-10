@@ -14,3 +14,5 @@ HAMM_url http://rosalind.info/problems/hamm/
 HAMM_id hamm
 IPRB_url http://rosalind.info/problems/iprb/
 IPRB_id iprb
+PROT_url http://rosalind.info/problems/prot/
+PROT_id prot

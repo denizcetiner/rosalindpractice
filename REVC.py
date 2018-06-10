@@ -1,6 +1,4 @@
 def run(dna_strand = "AAAACCCGGT"):
-
-
     complements = {"A": "T", "G": "C"}
     revd = dict()
     for i in complements.items():

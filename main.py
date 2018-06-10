@@ -1,4 +1,10 @@
-def run(problem_name = ""):
+def run(problem_name=""):
+    values = {}
+    with open("url_dataset_names.txt") as file:
+        for line in file:
+            (key, val) = line.split()
+            values[str(key)] = val
+
     url = values["{0}_url".format(problem_name)]
     id = values["{0}_id".format(problem_name)]
     print(url)
@@ -11,11 +17,10 @@ def run(problem_name = ""):
         dataset_result_file.write(str(result))
     return
 
-values = {}
-with open("url_dataset_names.txt") as file:
-    for line in file:
-        (key, val) = line.split()
-        values[str(key)] = val
 
-problem_name = input()
-run(problem_name.upper())
+def main():
+    problem_name_input = input()
+    run(problem_name_input.upper())
+
+
+main()
