@@ -12,3 +12,5 @@ GC_url http://rosalind.info/problems/gc/
 GC_id gc
 HAMM_url http://rosalind.info/problems/hamm/
 HAMM_id hamm
+IPRB_url http://rosalind.info/problems/iprb/
+IPRB_id iprb
