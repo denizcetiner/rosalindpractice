@@ -10,3 +10,5 @@ FIB_url http://rosalind.info/problems/fib/
 FIB_id fib
 GC_url http://rosalind.info/problems/gc/
 GC_id gc
+HAMM_url http://rosalind.info/problems/hamm/
+HAMM_id hamm
