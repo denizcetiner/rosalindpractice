@@ -16,3 +16,5 @@ IPRB_url http://rosalind.info/problems/iprb/
 IPRB_id iprb
 PROT_url http://rosalind.info/problems/prot/
 PROT_id prot
+SUBS_url http://rosalind.info/problems/subs/
+SUBS_id subs
