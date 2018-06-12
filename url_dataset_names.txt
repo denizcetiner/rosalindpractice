@@ -20,3 +20,5 @@ SUBS_url http://rosalind.info/problems/subs/
 SUBS_id subs
 CONS_url http://rosalind.info/problems/cons/
 CONS_id cons
+FIBD_url http://rosalind.info/problems/fibd/
+FIBD_id fibd
