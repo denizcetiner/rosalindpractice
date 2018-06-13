@@ -26,3 +26,5 @@ GRPH_url http://rosalind.info/problems/grph/
 GRPH_id grph
 IEV_url http://rosalind.info/problems/iev/
 IEV_id iev
+LCSM_url http://rosalind.info/problems/lcsm/
+LCSM_id lcsm
