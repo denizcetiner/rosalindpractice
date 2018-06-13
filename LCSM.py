@@ -42,6 +42,8 @@ def exists_in_all(name_strand_dict={}, substrings=[]):
             strand = name_strand_dict[name]
             if substring in strand:
                 existing_count += 1
+            else:
+                break
         # print("names_count: {0}, existing_count: {1}".format(names_count, existing_count))
         if existing_count == names_count:
             return substring
