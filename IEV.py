@@ -22,11 +22,11 @@ def get_found_list(search_list=[], looking_for=[[]]):
             found_list.append(element)
     return found_list
 
-def run(inputs="2 2 2", looking_for=[[0, 1], [1, 0], [1, 1]]):
+def run(inputs="1 0 0 1 0 1", looking_for=[[0, 1], [1, 0], [1, 1]]):
     input_params = inputs.split(" ")
-    homo_d = int(input_params[0])
-    hetero = int(input_params[1])
-    homo_r = int(input_params[2])
+    homo_d = 2
+    hetero = 2
+    homo_r = 2
 
     traits = {"homo_d" : [1, 1],
               "hetero" : [1, 0],
@@ -40,21 +40,28 @@ def run(inputs="2 2 2", looking_for=[[0, 1], [1, 0], [1, 1]]):
         invs.append(traits["homo_r"])
     print(invs)
 
-    mating_pairs = []
+    selected_mating_pairs = []
+    pair_index = 0
+    all_mating_pairs = []
     for index_inv1 in range(len(invs) - 1):
         for index_inv2 in range(index_inv1 + 1, len(invs)):
             inv1 = invs[index_inv1]
             inv2 = invs[index_inv2]
             pair = [inv1, inv2]
-            mating_pairs.append(pair)
-    print("{0} pairs: {1}".format(len(mating_pairs), mating_pairs))
-    results = mate_pairs(mating_pairs)
-    print(results)
+            if pair not in all_mating_pairs:
+                all_mating_pairs.append(pair)
+                for i in range(int(input_params[pair_index])):
+                    selected_mating_pairs.append(pair)
+                pair_index += 1
+    print("{0} pairs: {1}".format(len(selected_mating_pairs), selected_mating_pairs))
+    expected = 0
+    for pair in selected_mating_pairs:
+        child_probabilities = mate(pair[0], pair[1])
+        found = get_found_list(child_probabilities, looking_for)
+        expected += len(found) / len(child_probabilities) * 2
+    print(expected)
 
-    found_list = get_found_list(results, looking_for)
-    probability = len(found_list) / len(results)
-    print("Found {0} in {1} results, probability: {2}".format(len(found_list),
-                                                              len(results),
-                                                              probability))
-    return probability
+    return expected
 
+
+run()
