@@ -45,7 +45,7 @@ class RabbitPairMonth:
         self.give_birth()
         self.grow_older()
 
-# O(2^n), very slow for inputs longer then 10 month.
+
 def create_wabbits_heritage(adam_and_eve: 'RabbitPairMonth', observe_for_months: int):
     rabbits_heap_tree = [adam_and_eve]
     index_rabbits_heap_tree = 0
