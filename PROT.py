@@ -1,16 +1,7 @@
-def codon_name_table():
-    codon_dict = {}
-    with open("rna_codon_table", "r") as codon_file:
-        codons_names = codon_file.read().split()
-    for i in range(0, len(codons_names), 2):
-        codon = codons_names[i]
-        name = codons_names[i+1]
-        codon_dict[codon] = name
-    # print(codon_dict)
-    return codon_dict
+from helpers import get_codon_protein_dict
 
 def run(rna_string="AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA"):
-    codon_name_dict = codon_name_table()
+    codon_name_dict = get_codon_protein_dict()
     aminoacids = []
     for i in range(0, len(rna_string), 3):
         print(i)

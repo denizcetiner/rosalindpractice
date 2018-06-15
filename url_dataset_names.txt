@@ -34,3 +34,5 @@ LIA_url http://rosalind.info/problems/lia/
 LIA_id lia
 MPRT_url http://rosalind.info/problems/mprt/
 MPRT_id mprt
+MRNA_url http://rosalind.info/problems/mrna/
+MRNA_id mrna

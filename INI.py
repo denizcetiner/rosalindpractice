@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-
+from helpers import sort_dict
 
 def get_nucleotide_counts(dna_sequence):
     nucleotide_counts = {"A": 0, "G": 0, "T": 0, "C": 0}
@@ -9,13 +9,6 @@ def get_nucleotide_counts(dna_sequence):
         else:
             nucleotide_counts[nucleotide] = 1
     return sort_dict(nucleotide_counts)
-
-
-def sort_dict(input_dict={}):
-    result = {}
-    for key in sorted(input_dict.keys()):
-        result[key] = input_dict[key]
-    return result
 
 
 def show_bar_chart(input_dict={}):
