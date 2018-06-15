@@ -32,3 +32,5 @@ LCSM_url http://rosalind.info/problems/lcsm/
 LCSM_id lcsm
 LIA_url http://rosalind.info/problems/lia/
 LIA_id lia
+MPRT_url http://rosalind.info/problems/mprt/
+MPRT_id mprt

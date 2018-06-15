@@ -1,3 +1,5 @@
+from helpers import extract
+
 def create_matrix(name_dna_dict = {}):
     length = len(list(name_dna_dict.values())[0])
     matrix = []
@@ -34,18 +36,6 @@ def create_consensus_string(profile_dict = {}):
         consensus.append(max_nucleotide)
     print(consensus)
     return consensus
-
-
-def extract(dna_strings=""):
-        dna_dict = {}
-        current_dna_name = ""
-        for line in dna_strings.splitlines():
-            if line.startswith(">"):
-                current_dna_name = line.replace(">", "")
-                dna_dict[current_dna_name] = ""
-            else:
-                dna_dict[current_dna_name] += line.strip()
-        return dna_dict
 
 def run(input = """>Rosalind_1
 ATCCAGCT

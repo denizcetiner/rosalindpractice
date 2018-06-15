@@ -1,14 +1,4 @@
-def extract(dna_strings=""):
-    dna_dict = {}
-    current_dna_name = ""
-    for line in dna_strings.splitlines():
-        if line.startswith(">"):
-            current_dna_name = line.replace(">", "")
-            dna_dict[current_dna_name] = ""
-        else:
-            dna_dict[current_dna_name] += line.strip()
-    return dna_dict
-
+from helpers import extract
 
 def run(dna_strings=""">Rosalind_6404
 CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGCCTTCCC
