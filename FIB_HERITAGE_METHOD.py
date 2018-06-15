@@ -46,6 +46,7 @@ class RabbitPairMonth:
         self.grow_older()
 
 
+
 def create_wabbits_heritage(adam_and_eve: 'RabbitPairMonth', observe_for_months: int):
     rabbits_heap_tree = [adam_and_eve]
     index_rabbits_heap_tree = 0

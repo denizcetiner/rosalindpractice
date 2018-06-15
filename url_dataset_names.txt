@@ -30,3 +30,5 @@ IEV_url http://rosalind.info/problems/iev/
 IEV_id iev
 LCSM_url http://rosalind.info/problems/lcsm/
 LCSM_id lcsm
+LIA_url http://rosalind.info/problems/lia/
+LIA_id lia
