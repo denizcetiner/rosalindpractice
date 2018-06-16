@@ -38,3 +38,5 @@ MRNA_url http://rosalind.info/problems/mrna/
 MRNA_id mrna
 ORF_url http://rosalind.info/problems/orf/
 ORF_id orf
+PERM_url http://rosalind.info/problems/perm/
+PERM_id perm
