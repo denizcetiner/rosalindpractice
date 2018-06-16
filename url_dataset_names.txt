@@ -36,3 +36,5 @@ MPRT_url http://rosalind.info/problems/mprt/
 MPRT_id mprt
 MRNA_url http://rosalind.info/problems/mrna/
 MRNA_id mrna
+ORF_url http://rosalind.info/problems/orf/
+ORF_id orf

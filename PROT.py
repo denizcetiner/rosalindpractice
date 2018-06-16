@@ -1,17 +1,16 @@
-from helpers import get_codon_protein_dict
+from helpers import transcribe_until_stop, get_protein_codon_dict
+
 
 def run(rna_string="AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA"):
-    codon_name_dict = get_codon_protein_dict()
-    aminoacids = []
-    for i in range(0, len(rna_string), 3):
-        print(i)
-        codon = rna_string[i:i+3]
-        aminoacid = codon_name_dict[codon]
-        print("Codon: {0}, Aminoacid: {1}".format(codon, aminoacid))
-        if  aminoacid != "Stop":
-            aminoacids.append(aminoacid)
-        else:
-            break
-    result = "".join(aminoacids)
+    proteins = transcribe_until_stop(rna_string)
+    proteins_nostop = [protein for protein in proteins if protein != "Stop"]
+    d= get_protein_codon_dict()
+
+    for protein in proteins_nostop:
+        print("Codon: {0}, Aminoacid: {1}".format(d[protein], protein))
+    result = "".join(proteins_nostop)
     print(result)
     return result
+
+
+run()
