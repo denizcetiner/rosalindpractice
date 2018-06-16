@@ -40,3 +40,5 @@ ORF_url http://rosalind.info/problems/orf/
 ORF_id orf
 PERM_url http://rosalind.info/problems/perm/
 PERM_id perm
+PRTM_url http://rosalind.info/problems/prtm/
+PRTM_id prtm
