@@ -42,3 +42,5 @@ PERM_url http://rosalind.info/problems/perm/
 PERM_id perm
 PRTM_url http://rosalind.info/problems/prtm/
 PRTM_id prtm
+REVP_url http://rosalind.info/problems/revp/
+REVP_id revp

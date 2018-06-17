@@ -1,5 +1,5 @@
 import re
-
+import itertools
 
 def extract(dna_strings=""):
     dna_dict = {}
@@ -148,3 +148,60 @@ def get_reading_frames(dna_strand=""):
     for i in range(3):
         possible_reading_frames.append(dna_strand[i:])
     return possible_reading_frames
+
+
+def get_all_substrings(strand=""):
+    length = len(strand)
+    substrings = []
+
+    for start in range(length):
+        for end in range(start+1,length+1):
+            substring = strand[start:end]
+            substrings.append(substring)
+
+
+def get_dict_pos_substring(strand=""):
+    length = len(strand)
+    dict_pos_substring = {}
+
+    for start in range(length):
+        for end in range(start + 1, length + 1):
+            substring = strand[start:end]
+            if start not in dict_pos_substring:
+                dict_pos_substring[start] = [substring]
+            else:
+                dict_pos_substring[start].append(substring)
+
+    return dict_pos_substring
+
+
+def get_subsequences_of_length(strand="ABCDEF", length=4):
+    perm_source = []
+    for i in range(len(strand)):
+        perm_source.append(i)
+
+    perms = itertools.permutations(perm_source, length)
+
+    list_perms = []
+
+    for perm in perms:
+        list_perm = sorted(list(perm))
+        if list_perm not in list_perms:
+            list_perms.append(list_perm)
+
+    list_subsequences = []
+    for list_perm in list_perms:
+        subsequence_characters = []
+        for position in list_perm:
+            subsequence_characters.append(strand[position])
+        list_subsequences.append("".join(subsequence_characters))
+
+    return list_subsequences
+
+
+def get_subsequences_all_lengths(strand="ABCDEF"):
+    all_subseqs = []
+    for i in range(1, len(strand)+1):
+        all_subseqs.extend(get_subsequences_of_length(strand, i))
+
+    return all_subseqs
