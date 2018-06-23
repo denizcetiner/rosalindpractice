@@ -44,3 +44,9 @@ PRTM_url http://rosalind.info/problems/prtm/
 PRTM_id prtm
 REVP_url http://rosalind.info/problems/revp/
 REVP_id revp
+SPLC_url http://rosalind.info/problems/splc/
+SPLC_id splc
+LEXF_url http://rosalind.info/problems/lexf/
+LEXF_id lexf
+LGIS_url http://rosalind.info/problems/lgis/
+LGIS_id lgis
