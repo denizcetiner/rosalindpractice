@@ -158,7 +158,7 @@ def get_all_substrings(strand=""):
         for end in range(start+1,length+1):
             substring = strand[start:end]
             substrings.append(substring)
-
+    return substrings
 
 def get_dict_pos_substring(strand=""):
     length = len(strand)

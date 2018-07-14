@@ -1,4 +1,5 @@
-from helpers import extract
+from helpers import extract, get_all_substrings
+
 
 def find_shortest_values_name(name_strand_dict={}):
     shortest_name = list(name_strand_dict.keys())[0]
@@ -9,18 +10,6 @@ def find_shortest_values_name(name_strand_dict={}):
             shortest_name = name
             shortest_length = len(strand)
     return shortest_name
-
-
-def get_all_substrings(strand=""):
-    length = len(strand)
-    substrings = []
-
-    for start in range(length):
-        for end in range(start+1,length+1):
-            substring = strand[start:end]
-            substrings.append(substring)
-
-    return substrings
 
 
 def exists_in_all(name_strand_dict={}, substrings=[]):
@@ -53,5 +42,5 @@ ATACA"""):
     substrings.sort(key=len, reverse=True)
     # print(substrings)
     result = exists_in_all(name_strand_dict, substrings)
-    # print(result)
+    print(result)
     return result
