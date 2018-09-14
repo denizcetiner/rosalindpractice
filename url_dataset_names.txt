@@ -66,3 +66,11 @@ TRAN_url http://rosalind.info/problems/tran/
 TRAN_id tran
 TREE_url http://rosalind.info/problems/tree/
 TREE_id tree
+DBPR_url http://rosalind.info/problems/dbpr/
+DBPR_id dbpr
+GBK_url http://rosalind.info/problems/gbk/
+GBK_id gbk
+FRMT_url http://rosalind.info/problems/frmt/
+FRMT_id frmt
+TFSQ_url asdf
+TFSQ_id tfsq

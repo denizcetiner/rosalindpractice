@@ -1,13 +1,13 @@
 import matplotlib.pyplot as plt
 from helpers import sort_dict
+from Bio.Seq import Seq
+
 
 def get_nucleotide_counts(dna_sequence):
     nucleotide_counts = {"A": 0, "G": 0, "T": 0, "C": 0}
-    for nucleotide in dna_sequence:
-        if nucleotide in nucleotide_counts:
-            nucleotide_counts[nucleotide] += 1
-        else:
-            nucleotide_counts[nucleotide] = 1
+    my_seq = Seq(dna_sequence)
+    for key in list(nucleotide_counts.keys()):
+        nucleotide_counts[key] = my_seq.count(key)
     return sort_dict(nucleotide_counts)
 
 
@@ -20,8 +20,6 @@ def run(dna_sequence="AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTG
     print(nucleotide_counts)
     show_bar_chart(nucleotide_counts)
 
-    result = "{0} {1} {2} {3}".format(nucleotide_counts["A"],
-                                      nucleotide_counts["C"],
-                                      nucleotide_counts["G"],
-                                      nucleotide_counts["T"])
+    result = f"{nucleotide_counts['A']} {nucleotide_counts['C']} {nucleotide_counts['G']} {nucleotide_counts['T']}"
+    print(result)
     return result
