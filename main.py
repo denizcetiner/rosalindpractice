@@ -32,9 +32,9 @@ def run_test(problem_name: str):
     if not os.path.exists(outputs_directory):
         os.makedirs(outputs_directory)
 
+    results = []
     dir_files = os.listdir(inputs_directory)
     for file in dir_files:
-        print(file)
         with open(f"{inputs_directory}/{file}", "r") as dataset_file:
             dataset_input = dataset_file.read().strip()
 
@@ -42,8 +42,16 @@ def run_test(problem_name: str):
         result = getattr(module, "run")(dataset_input)
 
 
-        with open(f"{outputs_directory}/result_{file}","w") as result_file:
-            result_file.write(str(result))
+        with open(f"{outputs_directory}/result_{file}","r") as result_file:
+            success_result = result_file.read()
+
+
+        if str(result).strip() == str(success_result).strip():
+            results.append(f"{file} successfull")
+        else:
+            results(f"{file} failed, {result} {success_result}")
+
+    print("\n".join(results))
 
 
 def main():
