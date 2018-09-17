@@ -102,3 +102,7 @@ MAJ_url asdf
 MAJ_id maj
 MER_url asdf
 MER_id mer
+2SUM_url asdf
+2SUM_id 2sum
+BFS_url bfs
+BFS_id bfs
