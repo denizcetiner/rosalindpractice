@@ -110,3 +110,17 @@ CAT_url cat
 CAT_id cat
 CORR_url corr
 CORR_id corr
+CC_url cc
+CC_id cc
+HEA_url hea
+HEA_id hea
+MS_url ms
+MS_id ms
+PAR_url par
+PAR_id par
+3SUM_url 3sum
+3SUM_id 3sum
+PAR3_url par3
+PAR3_id par3
+QS_url qs
+QS_id qs
