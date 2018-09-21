@@ -124,3 +124,5 @@ PAR3_url par3
 PAR3_id par3
 QS_url qs
 QS_id qs
+MED_url med
+MED_id med
