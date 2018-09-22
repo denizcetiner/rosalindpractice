@@ -126,3 +126,7 @@ QS_url qs
 QS_id qs
 MED_url med
 MED_id med
+BIP_url bip
+BIP_id bip
+DAG_url dag
+DAG_id dag
