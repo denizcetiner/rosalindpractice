@@ -130,3 +130,5 @@ BIP_url bip
 BIP_id bip
 DAG_url dag
 DAG_id dag
+DIJ_url dij
+DIJ_id dij
