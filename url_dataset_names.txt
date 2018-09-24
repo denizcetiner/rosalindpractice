@@ -132,3 +132,5 @@ DAG_url dag
 DAG_id dag
 DIJ_url dij
 DIJ_id dij
+INV_url inv
+INV_id inv
