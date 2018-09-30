@@ -136,3 +136,9 @@ INV_url inv
 INV_id inv
 BA10A_url ba10a
 BA10A_id ba10a
+BA10B_url ba10b
+BA10B_id ba10b
+QS_url qs
+QS_id qs
+RSTR_url rstr
+RSTR_id rstr
